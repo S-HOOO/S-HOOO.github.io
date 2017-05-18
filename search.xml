@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[2017.5.18]]></title>
     <url>%2F2017%2F05%2F18%2F2017-5-18%2F</url>
-    <content type="text"><![CDATA[2017.5.18 Hexo+GitHub建站 Markdown学习 Mathjax学习 建站经历 选择好的建站教程 这个讲得十分易懂 http://blog.csdn.net/jzooo/article/details/46781805主题推荐 http://www.jianshu.com/p/bcdbe7347c8d Git Bash的问题 网上教程很多，讲得也很详细，但是面临的问题比教程里的多得多第一个问题就是Git Bash，用它根本就不能install hexo试了很多次才发现原来用Windows自带的cmd就可以下载了，于是一直用cmd install npm 组件的问题 在选择主题的时候，很难避免去安装一些npm的组件而国内的网络很多时候会下载失败，需要使用淘宝npm安装 localhost:4000 有一件很奇怪的事情，调着localhost就不行了，不过开着VPN网络也很快 主题选择的问题 hexo的官网很慢，你在上面找主题会累得要死上网找一些推荐的主题，还带安装方法，不过更多的还是要自己去摸索 插件及其他功能 这个应该是最有趣的地方吧，上网到处找有趣的插件 头像问题 方便使用，选择一个存图的网站，方便以后写博 Markdown的学习]]></content>
+    <content type="text"><![CDATA[概述 Hexo+GitHub建站 Markdown学习 Mathjax学习 建站经历 选择好的建站教程 这个讲得十分易懂 http://blog.csdn.net/jzooo/article/details/46781805主题推荐 http://www.jianshu.com/p/bcdbe7347c8d Git Bash的问题 网上教程很多，讲得也很详细，但是面临的问题比教程里的多得多第一个问题就是Git Bash，用它根本就不能install hexo试了很多次才发现原来用Windows自带的cmd就可以下载了，于是一直用cmd install npm 组件的问题 在选择主题的时候，很难避免去安装一些npm的组件而国内的网络很多时候会下载失败，需要使用淘宝npm安装 localhost:4000 有一件很奇怪的事情，调着localhost就不行了，不过开着VPN网络也很快 主题选择的问题 hexo的官网很慢，你在上面找主题会累得要死上网找一些推荐的主题，还带安装方法，不过更多的还是要自己去摸索 插件及其他功能 这个应该是最有趣的地方吧，上网到处找有趣的插件 头像问题 方便使用，选择一个存图的网站，方便以后写博 Markdown的学习]]></content>
       <categories>
         <category>建站</category>
       </categories>
