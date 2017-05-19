@@ -97,7 +97,7 @@
 <meta property="og:url" content="http://S-HOOO.github.io/2017/05/18/bzoj-2759-一个动态树好题/index.html">
 <meta property="og:site_name" content="hooo&#39;s blog">
 <meta property="og:description" content="概述 题解">
-<meta property="og:updated_time" content="2017-05-19T01:05:51.612Z">
+<meta property="og:updated_time" content="2017-05-19T01:07:22.717Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[bzoj 2759] 一个动态树好题">
 <meta name="twitter:description" content="概述 题解">
@@ -419,7 +419,7 @@
 </ul>
 <a id="more"></a>
 <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><blockquote>
-<p>有$N$个未知数$x_1$~$x_N$和$N$个等式组成的同余方程组：<br>$ X_i \equiv {K<em>i}*{X</em>{P_i}}+B_i \ \ \  (mod \ 10007) $<br>其中，$ K_i,B_i,X_i\in[0,10007)\bigcap Z $<br>你要应付$Q$个事务，每个是两种情况之一：<br>一.询问当前$x_a$的解<br>$A \ \ a$<br>无解输出$-1$<br>$x_a$有多解输出$-2$<br>否则输出$x_a$<br>二.修改一个等式<br>$C \  \  a \ \  k_a \ \ p_a \ \ b_a$</p>
+<p>有$N$个未知数$x_1$~$x_N$和$N$个等式组成的同余方程组：<br>$X_i\equiv{K<em>i}*{X</em>{P_i}}+B_i \ \ \  (mod \ 10007)$<br>其中，$ K_i,B_i,X_i\in[0,10007)\bigcap Z $<br>你要应付$Q$个事务，每个是两种情况之一：<br>一.询问当前$x_a$的解<br>$A \ \ a$<br>无解输出$-1$<br>$x_a$有多解输出$-2$<br>否则输出$x_a$<br>二.修改一个等式<br>$C \  \  a \ \  k_a \ \ p_a \ \ b_a$</p>
 </blockquote>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><blockquote>
 <p>同余方程的形式为：$ X_i \equiv {K<em>i}*{X</em>{P_i}}+B<em>i \ \   (mod \ 10007) $<br>也就是说，知道$X</em>{P_i}$就知道了$X<em>i$，$X</em>{P_i}$向$X_i$连一条边</p>
