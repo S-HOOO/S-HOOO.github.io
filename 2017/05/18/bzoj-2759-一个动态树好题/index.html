@@ -97,7 +97,7 @@
 <meta property="og:url" content="http://S-HOOO.github.io/2017/05/18/bzoj-2759-一个动态树好题/index.html">
 <meta property="og:site_name" content="hooo&#39;s blog">
 <meta property="og:description" content="概述 题解">
-<meta property="og:updated_time" content="2017-05-19T01:12:53.440Z">
+<meta property="og:updated_time" content="2017-05-19T01:16:47.026Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[bzoj 2759] 一个动态树好题">
 <meta name="twitter:description" content="概述 题解">
@@ -422,10 +422,10 @@
 <p>有$N$个未知数$x_1$~$x_N$和$N$个等式组成的同余方程组：<br>$X_i\equiv{K_i}*{X_{P_i}}+B_i \ \ \  (mod \ 10007)$<br>其中，$ K_i,B_i,X_i\in[0,10007)\bigcap Z $<br>你要应付$Q$个事务，每个是两种情况之一：<br>一.询问当前$x_a$的解<br>$A \ \ a$<br>无解输出$-1$<br>$x_a$有多解输出$-2$<br>否则输出$x_a$<br>二.修改一个等式<br>$C \  \  a \ \  k_a \ \ p_a \ \ b_a$</p>
 </blockquote>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><blockquote>
-<p>同余方程的形式为：$ X_i \equiv {K<em>i}*{X</em>{P_i}}+B<em>i \ \   (mod \ 10007) $<br>也就是说，知道$X</em>{P_i}$就知道了$X<em>i$，$X</em>{P_i}$向$X_i$连一条边</p>
+<p>同余方程的形式为：$ X_i \equiv {K_i}*{X_{P_i}}+B_i \ \   (mod \ 10007) $<br>也就是说，知道$X_{P_i}$就知道了$X_i$，$X_{P_i}$向$X_i$连一条边</p>
 <p>因此$N$个点一共有$N$条边，构成一个基环森林<br>对于环上的点，我们选择一个作为根，其$Fa$称为$SFa$，并断开$Root$与$SFa$的边<br>当且仅当基环树的树根上有$SFa$</p>
 <p>由于需要割边和加边，我们需要用LCT来维护</p>
-<p>思考如何求解？<br>如果是一个环的话，我们选择一个点作为起始点，把一次方程依次代入<br>若环上的点有多解，那么树上的点也有多解<br>若环上的点无解，那么树上的点也无解<br>具体做的时候，我们需要在Splay上维护一个系数$K$和常数$B$（维护细节见程序）<br>考虑根到点$i$的序列，设根为第$1$个，$i$为第$N$个，根的$SFa$为$X_0$<br>$X_i = K_1K_2…KnX_0+(B_N+K<em>NB</em>{N-1}…+K_{2…N}B_1)$<br>最终得到的应该是$(k-1)x_0+b \equiv 0\ \ (mod \ 10007)$<br>讨论：</p>
+<p>思考如何求解？<br>如果是一个环的话，我们选择一个点作为起始点，把一次方程依次代入<br>若环上的点有多解，那么树上的点也有多解<br>若环上的点无解，那么树上的点也无解<br>具体做的时候，我们需要在Splay上维护一个系数$K$和常数$B$（维护细节见程序）<br>考虑根到点$i$的序列，设根为第$1$个，$i$为第$N$个，根的$SFa$为$X_0$<br>$X_i = K_1K_2…KnX_0+(B_N+K_NB_{N-1}…+K_{2…N}B_1)$<br>最终得到的应该是$(k-1)x_0+b \equiv 0\ \ (mod \ 10007)$<br>讨论：</p>
 <ol>
 <li><p>$k = 0 $ 且 $b \neq 0$<br>无解，输出$-1$</p>
 </li>
